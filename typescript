@@ -55,4 +55,98 @@ Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
 To https://github.com/samantha-plesce/327_proj1_make
    3de81c0..aa7d051  master -> master
-]0;guest-uuc1sm@L221-0000: ~/sa
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ g++ -c myfunc.cpp
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ g++ -c hell[K[K[K[Kmain.cpp
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ g++ myexe myfunc.o main.o
+myexe: In function `_start':
+(.text+0x0): multiple definition of `_start'
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o:(.text+0x0): first defined here
+myexe: In function `_fini':
+(.fini+0x0): multiple definition of `_fini'
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o:(.fini+0x0): first defined here
+myexe:(.rodata+0x0): multiple definition of `_IO_stdin_used'
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o:(.rodata.cst4+0x0): first defined here
+myexe: In function `data_start':
+(.data+0x0): multiple definition of `__data_start'
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o:(.data+0x0): first defined here
+myexe: In function `data_start':
+(.data+0x8): multiple definition of `__dso_handle'
+/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o:(.data+0x0): first defined here
+myexe: In function `_init':
+(.init+0x0): multiple definition of `_init'
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o:(.init+0x0): first defined here
+myfunc.o: In function `myfunc[abi:cxx11]()':
+myfunc.cpp:(.text+0x0): multiple definition of `myfunc[abi:cxx11]()'
+myexe:(.text+0x1d5): first defined here
+main.o: In function `main':
+main.cpp:(.text+0x0): multiple definition of `main'
+myexe:(.text+0xf6): first defined here
+/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o:(.tm_clone_table+0x0): multiple definition of `__TMC_END__'
+myexe:(.data+0x10): first defined here
+/usr/bin/ld: error in myexe(.eh_frame); no .eh_frame_hdr table will be created.
+collect2: error: ld returned 1 exit status
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ g++ -o main [K[K[K[K[Kmyexe myfunc.o main[K[K[K[Kmain.o
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ ls
+[0m[01;34m327_proj1_make[0m  main.o    [01;32mmyexe[0m       myfunc.h  typescript
+main.cpp        makefile  myfunc.cpp  myfunc.o
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ ./myexe
+hello
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ git add .
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ gti[K[Kit commit -m"1st portion"
+[master b27cafb] 1st portion
+ 4 files changed, 58 insertions(+)
+ create mode 100644 main.o
+ create mode 100644 myfunc.o
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': samplea sce@gmailc.  .com
+Password for 'https://samplesce@gmail.com@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 3.62 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 2 local objects.[K
+To https://github.com/samantha-plesce/327_proj1_make
+   aa7d051..b27cafb  master -> master
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ default [K: [K[K[K[K[K[K[K[K[KCFLAGS = -g -Wall
+CFLAGS: command not found
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ CC = gcc
+CC: command not found
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ $[K(CC[K[K[K%[K$(CC) $(CFLAGS) -o count countw ords.o counter.o scaner.o
+CC: command not found
+CFLAGS: command not found
+-o: command not found
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ mye[Kexe: main.o myfunc.o
+myexe:: command not found
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ ls
+[0m[01;34m327_proj1_make[0m  main.o    [01;32mmyexe[0m       myfunc.h  typescript
+main.cpp        makefile  myfunc.cpp  myfunc.o
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ g++ -o my exe main [K[K[K[K[K[K[K[K[K[Kexe [K[K[K[K[K[K[K[K[K[K[K[K[Knano makefile
+[?1049h[1;27r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[25;33H(B[0;7m[ Reading File ][3d(B[m[25;39H(B[0;7m 0 lines[3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3              File: makefile                                    [26;1H^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[27d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[1;71H(B[0;7mModified[3d(B[mCC = gcc[4dC[KFL [K[3;9H[4dCFLAGS =[25d[K[4;10H-g-   g -w Wall[5ddefault: count[6dcount : countwords.o counter.o scanner.o[7d[7;9H [7;9H$(c CC) $(cfl   CL FLAGS( ) -O COUNT COU         o count countwords.o counter.o scanner.o[8dcounterwords.o: coutn  nt: count words.c scannher .h counter .h[1P[1Pwords.o: count: countwords.c scannher.h counter.h[9d[9;9H[9;17H[9;9H[8;55H[1P[1P[1P[1P[1P[1P countwords.c scannher.h[1Per.h counter.h[9d[9;9H[9;17H[10d[9;17H[9;9H[8;48H[9d[9;9H[9;17H$(CC)[41m           [9;23H[49m(B[m $[KC (CFLAGS)[41m[17X [49m(B[m -[K[41m[15X [49m(B[m[Ko[41m[14X [49m(B[m c[Kount[41m[16X [49m(B[m c[Kountwords.o[41m           [9;55H[49m(B[m c[Koutner.o[41m[K [49m(B[m s[Kcanner.[80G$[9;73Ho[80G [10;1Hcountwords.o:[41m           [10;15H[49m(B[m c[Kountc words.c[41m[14X [49m(B[m s[Kcanner.h[41m            [10;38H[49m(B[m c[Kounter.h[11d[11;9H$(CC)[41m           [11;15H[49m(B[m $[K(CFLAGS)[41m[17X [49m(B[m -[Ko[41m[14X [49m(B[m c[Kount[41m[16X [49m(B[m c[Kountwords.o[41m           [11;47H[49m(B[m c[Kounter.o[41m[17X [49m(B[m s[Kcanner.o[12dcounter.o:[41m[14X [49m(B[m[C[K`  [17G[10G oL :[41m[14X [49m(B[m[12;25H[41m        [12;17H[49m(B[mc[Kounter      [41m[16X[49m(B[m[12;25H[K[12;12H[K  [25d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [26;1H Y(B[m Yes[K[27d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[25;62H[J[27;80H[27;1H[?1049l[?1l>]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ make
+make: *** No targets.  Stop.
+]0;guest-uuc1sm@L221-0000: ~/sam_c++/327_proj1_make[01;32mguest-uuc1sm@L221-0000[00m:[01;34m~/sam_c++/327_proj1_make[00m$ c[Knano makefile
+[?1049h[1;27r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[25;33H(B[0;7m[ Reading File ][3d(B[m[25;39H(B[0;7m 0 lines[3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3              File: makefile                                    [26;1H^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[27d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[1;71H(B[0;7mModified[3d(B[mtarget: main.cpp myfunc.cp[25d[K[3;27Hp myfunc.h[4d[4;9H[A[2;25r[2;1HM[1;27r[4;1H[ACC = g++7[4;25r8[4dM[1;27r[4;1HCFLAGS = = -g -w Wall[5d[1P[1P[1P[1P[1P[1P[1P[1PTmain.cpp myfunc.cpp myfunc.hTAmain.cpp myfunc.cpp myfunc.hTARmain.cpp myfunc.cpp myfunc.hTARGmain.cpp myfunc.cpp myfunc.h[5GEmain.cpp myfunc.cpp myfunc.h[6GTmain.cpp myfunc.cpp myfunc.h[7G main.cpp myfunc.cpp myfunc.h[8G[1P main.cpp myfunc.cpp myfunc.h[8G=main.cpp myfunc.cpp myfunc.h[5;9H main.cpp myfunc.cpp myfunc.h[5;10Hmain.cpp myfunc.cpp myfunc.h[6dALL:    [Kall: $(TARGET)[7d[8d$(TARGET): $(TARGET).c[9d[9;9H$(cc  CC) $(CFLAGS) -0 O o(  $(TARGE4T  T) $(TARGET).C[10dCLEA   [Kclan:[11d[11;9H$(RM) $(target      TARGET)[10;6H[9;24H[A[A[6;15H[5;24H[4;18H[3;9H[2;25r[2;1HM[1;27r[4;1H[A//makefile7[4;25r8[4dM[1;27r[4;1H[4;25r[25;1H
+[1;27r[3;11H         [K[?25lMain nano help text[4d[K[5d The nano editor is designed to emulate the functionality and ease-of-use[6d of the UW Pico text editor.  There are four main sections of the editor.[7d The top line shows the program version, the current filename being[8d edited, and whether or not the file has been modified.  Next is the main[9d editor window showing the file being edited.  The status line is the[10d third line from the bottom and shows important messages.  The bottom two[11d lines show the most commonly used shortcuts in the editor.[12d[K[13d The notation for shortcuts is as follows: Control-key sequences are[14d notated with a caret (^) symbol and can be entered either by using the[15d Control (Ctrl) key or pressing the Escape (Esc) key twice.  Escape-key[16d sequences are notated with the Meta (M-) symbol and can be entered using[17d either the Esc, Alt, or Meta key depending on your keyboard setup.  Also,[18d pressing Esc twice and then typing a three-digit decimal number from 000[19d to 255 will enter the character with the corresponding value.  The[20d following keystrokes are available in the main editor window.[21d Alternative keys are shown in parentheses:[23d^G    (F1)[17GDisplay this help text[24d^X    (F2)[17GClose the current file buffer / Exit from nano[26;2H(B[0;7mX(B[m Exit             (B[0;7m^P(B[m Prev Line        (B[0;7m^Y(B[m Prev Page        (B[0;7mM-\(B[m First Line[K[27;2H(B[0;7mL(B[m Refresh          (B[0;7m^N(B[m Next Line        (B[0;7m^V(B[m Next Page        (B[0;7mM-/(B[m Last Line[K[24;63H7[3;25r8[25d[3S[1;27r[22;1H^O    (F3)[17GWrite the current file to disk[23d^R    (F5)[17GInsert another file into the current one[24d7[3;25r8[25d[3S[1;27r[22;1H^W    (F6)[17GSearch for a string or a regular expression[23d^\    (M-R)     Replace a string or a regular expression[24d^K    (F9)[17GCut the current line and store it in the cutbuffer7[3;25r8[25d[3S[1;27r[22;1H^U    (F10)     Uncut from the cutbuffer into the current line[24d^J    (F4)[17GJustify the current paragraph7[3;25r8[25d[3S[1;27r[22;1H^T    (F12)     Invoke the spell checker, if available[23;17HInvoke the linter, if available[24;17HInvoke formatter, if available7[3;25r8[25d[3S[1;27r[23;1H^C    (F11)     Display the position of the cursor[24d^_    (M-G)     Go to line and column number7[3;25r8[25d[3S[1;27r[23;1H^Y    (F7)[17GGo one screenful up[24d^V    (F8)[17GGo one screenful down7[3;25r8[25d[3S[1;27r[22;1HM-\   (M-|)     Go to the first line of the file[23dM-/   (M-?)     Go to the last line of the file[24d[?12l[?25h[3d[K[4dCC = g++[K[5dCFLAGS = -g -Wall[K[6dTARGET = main.cpp myfunc.cpp myfunc.h[7dall: $(TARGET)[K[8d[K[9d$(TARGET): $(TARGET).c[K[10;8H[1K $(CC) $(CFLAGS) -o $(TARGET) $(TARGET).C[K[11dclan:[12d  [1K $(RM) $(TARGET)[K[13d[K[14d[K[15d[K[17d[K[18d[K[20d[K[21d[K[22d[K[23d[K[26;2H(B[0;7mG(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[27;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[4d[5d[6d[7d[8d7[8;25r8M[1;27r[9;1H[8;25r[8;1HM[1;27r[10;1H[8;25r[8;1HM[1;27r[11;1H[A[Amyexe: hello.o m        main.o myfunc.o7[10;25r8[10dM[1;27r[10;1H[10;9Hg++ $(CFLAGS) -o myexe main.o myfunc.o7[11;25r8[11dM[1;27r[11;1Hmain.o: main.cpp myfunc.h7[12;25r8[12dM[1;27r[12;1H[12;9Hg++ $(c CFLAF GS) -C c  main.cpp7[13;25r8[13dM[1;27r[13;1Hmyfunc.o: my func.cpp myfunc.h[1Pfunc.cpp myfunc.7[14;25r8[14dM[1;27r[13;29H [14dh=h-hh[Kh[K[14;25r[25;1H
+[1;27r[13;29Hhh7[14;25r8[14dM[1;27r[14;1H[14;9Hg++ $(CGLAGS) -C MYFUNC.CPP                  FLAGS) -cmyfunc.cpp7[15;25r8[15dM[1;27r[15;1HClear    [Kclean7[16;25r8[16dM[1;27r[16;1H[16;25r[25;1H
+[1;27r[15;6H:7[16;25r8[16dM[1;27r[16;1H[16;9Hrm-f *.; o mey  yexe.exe7[17;25r8[17dM[1;27r[17;1H[16;27H -f *.o myexe.exe[16;12H[17d[18d[19d[20;12H[21d[22;6H[23;12H[24;9H7[2;25r8[25d[12S[1;27r[2;1H[K[13d[12;9H[13d[12;9H[11;24H             [K[11;9H[10;6H    [K[9;49H                                   [K[9;9H[8;23H                    [K[A[A[A[4;28H[2;25r[2;1H[12T[1;27r[4;1HCC = g++[5dCFLAGS = -g -Wall[6dTARGET = main.cpp myfunc.cpp myfunc.h[7dall: $(TARGET)[9dmyexe: main.o myfunc.o[10;9Hg++ $(CFLAGS) -o myexe main.o myfunc.o[11dmain.o: main.cpp myfunc.h[12;9Hg++ $(CFLAGS) -c main.cpp[13dmyfunc.o: myfunc.cpp myfunc.h[14;9Hg++ $(CFLAGS) -cmyfunc.cpp[13;28H[10d[7;15H[4;9H[A[4;9H[25d(B[0;7mFile to insert [from ./] :                                                      [26;14H(B[m             (B[0;7m^X(B[m Execute Command        (B[0;7m^T(B[m To Files[K[27;2H(B[0;7mC(B[m Cancel[17X[27;27H(B[0;7mM-F(B[m New Buffer
